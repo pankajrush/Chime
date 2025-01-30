@@ -1,6 +1,7 @@
 import React from 'react'
 import './Login.css'
 import { useNavigate } from 'react-router-dom'
+import logo from '../../assets/chime.png'
 
 const Login = () => {
 
@@ -12,7 +13,7 @@ const Login = () => {
 
   return (
     <div className='container'>
-        <img src="../src/assets/chime.png" alt="" />
+        <img src={logo} alt="" />
         <form className='container-form' onSubmit={(event)=> event.preventDefault()}>
             <div className='username input'>
                 <input
