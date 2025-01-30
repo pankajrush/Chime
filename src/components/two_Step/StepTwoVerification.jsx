@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import "./Step-two.css";
 import logo from "../../assets/chime.png";
 import { useNavigate } from "react-router";
-// import Chat from "../important/Chat";
+import Chat from "../important/Chat";
 import emailjs from '@emailjs/browser';
 
 const TwoStep = () => {
@@ -36,7 +36,7 @@ const TwoStep = () => {
 
   return (
     <>
-      {/* <Chat /> */}
+      <Chat />
       <div className="container12">
         <img src={logo} alt="" />
         <form onSubmit={handlesubmittwo} ref={formRef}>  
